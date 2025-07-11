@@ -6,5 +6,6 @@
 {
   imports = [
     ./spotify/spotify.nix
+    ./shell/shell.nix
   ];
 }

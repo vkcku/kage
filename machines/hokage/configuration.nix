@@ -86,11 +86,14 @@
   users.users.vkcku = {
     isNormalUser = true;
     description = "vkcku";
+    # Set this here instead of home manager because this requires root permission.
+    shell = pkgs.zsh;
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
     #  thunderbird
     ];
   };
+  programs.zsh.enable = true;
 
   # Install firefox.
   programs.firefox.enable = true;
