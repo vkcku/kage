@@ -1,0 +1,9 @@
+;; TODO: Add the other keys as well.
+(defsrc
+	caps esc
+)
+
+;; The default layer that swaps CAPS LOCK and ESC.
+(deflayer qwerty
+	esc caps
+)
