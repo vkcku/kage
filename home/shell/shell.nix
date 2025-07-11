@@ -13,4 +13,9 @@
       save = 10000;
     };
   };
+
+  programs.starship = {
+    enable = true;
+    enableZshIntegration = true;
+  };
 }
