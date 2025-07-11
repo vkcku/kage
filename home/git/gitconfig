@@ -1,0 +1,42 @@
+[init]
+	defaultBranch = main
+
+[user]
+	name = vkcku
+	email = git@mail.vkcku.com
+	signingKey = ~/.ssh/git-id_ed25519.pub
+
+[credential "https://github.com"]
+	helper = !gh auth git-credential
+
+[credential "https://gist.github.com"]
+	helper = !gh auth git-credential
+
+[core]
+	editor = hx
+	excludesfile = ~/.gitignore
+	sshCommand = ssh -i ~/.ssh/git-id_ed25519
+	fsmonitor = true
+
+[commit]
+	gpgsign = true
+
+[tag]
+	gpgSign = true
+
+[gpg]
+	format = ssh
+
+[gpg "ssh"]
+	allowedSignersFile = ~/.ssh/allowed_signers
+
+[alias]
+	pf = push --force-with-lease
+	logs = log main..
+	logso = log --oneline main..
+
+[branch]
+	sort = -committerdate
+
+[rerere]
+	enabled = true

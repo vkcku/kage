@@ -20,6 +20,7 @@
         home-manager.nixosModules.home-manager {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
+          home-manager.backupFileExtension = "bak";
 
           # These arguments are passed to `home.nix`.
           home-manager.extraSpecialArgs = {
