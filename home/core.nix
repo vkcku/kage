@@ -8,5 +8,6 @@
 
   imports = [
     ./helix/helix.nix
+    ./fonts/fonts.nix
   ];
 }
