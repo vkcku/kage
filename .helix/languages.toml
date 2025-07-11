@@ -1,0 +1,7 @@
+[[language]]
+name = "git-config"
+scope = "source.gitconfig"
+file-types = ["gitconfig", { glob = ".gitmodules" }, { glob = ".gitconfig" }, { glob = ".git/config" }, { glob = ".config/git/config" }, { glob = "home/git/gitconfig" }]
+injection-regex = "git-config"
+comment-token = "#"
+indent = { tab-width = 4, unit = "\t" }
