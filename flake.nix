@@ -9,7 +9,7 @@
     nixosConfigurations.hokage = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        ./machines/hokage/configuration.nix
+        ./machines/hokage
       ];
     };
   };
