@@ -6,7 +6,7 @@
   };
 
   outputs = {self, nixpkgs, ...}@inputs: {
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.hokage = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
         ./machines/hokage/configuration.nix
