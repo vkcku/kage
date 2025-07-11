@@ -25,7 +25,7 @@
           home-manager.extraSpecialArgs = {
              username = "vkcku";
           };
-          home-manager.users.vkcku = import ./home/core.nix;
+          home-manager.users.vkcku = import ./machines/hokage/home.nix;
         }
       ];
     };
