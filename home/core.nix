@@ -8,6 +8,7 @@
     unzip
     zstd
     coreutils
+    file
 
     htop
     linuxPackages_latest.perf
