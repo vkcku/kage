@@ -1,6 +1,19 @@
 { pkgs, ... }:
 
 {
+  home.packages = [
+    pkgs.zoxide
+  ];
+
+  home.shellAliases = {
+    cd = "z";
+  };
+
+  programs.zoxide = {
+    enable = true;
+    enableZshIntegration = true;
+  };
+
   programs.zsh = {
     enable = true;
     autosuggestion.enable = true;
