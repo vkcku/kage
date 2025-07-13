@@ -17,6 +17,7 @@
 	excludesfile = ~/.gitignore
 	sshCommand = ssh -i ~/.ssh/git-id_ed25519
 	fsmonitor = true
+	pager = delta
 
 [commit]
 	gpgsign = true
@@ -43,3 +44,13 @@
 
 [push]
 	autoSetupRemote = true
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	side-by-side = true
+	navigate = true
+
+[merge]
+	conflictStyle = zdiff3
