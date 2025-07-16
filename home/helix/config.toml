@@ -1,4 +1,24 @@
 theme = "bogster"
 
+[editor]
+true-color = true
+auto-format = false
+line-number = "relative"
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.file-picker]
+hidden = false
+
 [editor.soft-wrap]
 enable = true
+
+[keys.insert]
+"esc" = ["normal_mode", ":u"] # autosave
+
+[keys.normal]
+"g" = { "e" = "goto_last_line" }
+
+[keys.select]
+"g" = { "e" = "goto_file_end" }
