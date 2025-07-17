@@ -1,7 +1,7 @@
 # Configurations for when the machine has an actual user and is not a server.
 
 
-{ ... }:
+{ pkgs, ... }:
 
 {
   imports = [
@@ -10,5 +10,6 @@
     ./ghostty/ghostty.nix
     ./apps/apps.nix
     ./hyprland/hyprland.nix
+    ./theme/theme.nix
   ];
 }
