@@ -10,6 +10,7 @@
     ./ghostty/ghostty.nix
     ./apps/apps.nix
     ./hyprland/hyprland.nix
+    ./waybar/waybar.nix
     ./theme/theme.nix
   ];
 }

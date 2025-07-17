@@ -5,3 +5,10 @@ file-types = ["gitconfig", { glob = ".gitmodules" }, { glob = ".gitconfig" }, { 
 injection-regex = "git-config"
 comment-token = "#"
 indent = { tab-width = 4, unit = "\t" }
+
+[[language]]
+name = "jsonc"
+scope = "source.jsonc"
+file-types = ["jsonc", {glob = "home/waybar/config"} ]
+comment-token = "//"
+indent = { tab-width = 4, unit = " " }
