@@ -9,5 +9,6 @@
     ./shell/shell.nix
     ./ghostty/ghostty.nix
     ./apps/apps.nix
+    ./hyprland/hyprland.nix
   ];
 }
