@@ -4,6 +4,7 @@
   home.packages = [
     pkgs.hyprland
     pkgs.hyprlock
+    pkgs.hypridle
     pkgs.wofi
   ];
 
@@ -15,5 +16,9 @@
 
   home.file."${config.xdg.configHome}/hypr/hyprlock.conf" = {
     source = ./hyprlock.conf;
+  };
+
+  home.file."${config.xdg.configHome}/hypr/hypridle.conf" = {
+    source = ./hypridle.conf;
   };
 }
