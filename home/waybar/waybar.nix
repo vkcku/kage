@@ -9,4 +9,8 @@
   home.file."${config.xdg.configHome}/waybar/config" = lib.mkForce {
     source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/kage/home/waybar/config";
   };
+
+  home.file."${config.xdg.configHome}/waybar/style.css" = {
+    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/kage/home/waybar/style.css";
+  };
 }
