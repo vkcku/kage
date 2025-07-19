@@ -3,7 +3,7 @@
     "layer": "top", 
     "position": "top",
     "height": 30,
-    "spacing": 4,
+    "spacing": 0,
 
     "modules-left": [
         "hyprland/workspaces",
@@ -12,7 +12,10 @@
         "hyprland/window",
     ],
     "modules-right": [
+        "bluetooth",
         "battery",
+        "network",
+        "clock",
     ],
 
     "battery": {
@@ -33,4 +36,31 @@
             ],
             "tooltip-format": "{capacity}%",
     },
+
+    "network": {
+        "format-wifi": "",
+        "format-ethernet":"",
+        "format-disconnected": "",
+        "tooltip-format-disconnected": "Error",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ifname} 🖧 ",
+        "on-click": "ghostty -e nmtui"
+    },
+
+    "clock": {
+        "format": "{:%H:%M}",
+        "tooltip": true,
+        "tooltip-format": "{:%B %d - %A - %H:%M}"
+    },
+
+    "bluetooth": {
+        "format": "",
+        "format-connected": "",
+        "format-on": "",
+        "format-off": "󰂲",
+        "tooltip": true,
+        "tooltip-format": "{status}",
+
+        "on-click": "/home/vkcku/kage/scripts/bluetooth-toggle.sh",
+    }
 }
