@@ -12,5 +12,6 @@
     ./hyprland/hyprland.nix
     ./waybar/waybar.nix
     ./theme/theme.nix
+    ./ssh/ssh.nix
   ];
 }
