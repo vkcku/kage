@@ -5,6 +5,7 @@
     pkgs.hyprland
     pkgs.hyprlock
     pkgs.hypridle
+    pkgs.hyprpaper
     pkgs.wofi
   ];
 
@@ -21,4 +22,16 @@
   home.file."${config.xdg.configHome}/hypr/hypridle.conf" = {
     source = ./hypridle.conf;
   };
+
+  # Wallpaper
+  services.hyprpaper.settings = {
+    preload = [
+      "${config.home.homeDirectory}/kage/assets/wallpapers/boy-in-library.jpeg"
+    ];
+
+    wallpaper = [
+      ", ${config.home.homeDirectory}/kage/assets/wallpapers/boy-in-library.jpeg"
+    ];
+  };
+  
 }
