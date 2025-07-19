@@ -24,14 +24,17 @@
   };
 
   # Wallpaper
-  services.hyprpaper.settings = {
-    preload = [
-      "${config.home.homeDirectory}/kage/assets/wallpapers/boy-in-library.jpeg"
-    ];
-
-    wallpaper = [
-      ", ${config.home.homeDirectory}/kage/assets/wallpapers/boy-in-library.jpeg"
-    ];
-  };
+  services.hyprpaper = {
+    enable = true;
   
+    settings = {
+        preload = [
+          "${config.home.homeDirectory}/kage/assets/wallpapers/adventure.png"
+        ];
+
+        wallpaper = [
+          ", ${config.home.homeDirectory}/kage/assets/wallpapers/adventure.png"
+        ];
+      };
+    };
 }
