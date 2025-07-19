@@ -62,5 +62,11 @@
         "tooltip-format": "{status}",
 
         "on-click": "/home/vkcku/kage/scripts/bluetooth-toggle.sh",
-    }
+    },
+
+    "hyprland/workspaces": {
+        "persistent-workspaces": {
+            "*": [1, 2, 3, 4],
+        }
+    },
 }
